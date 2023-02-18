@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.track_warper {
+  position: relative;
+}
+.order_status {
+  position: absolute;
+  top: -16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 38px;
+}
+
+.circle_wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle_wraper label {
+  padding-top: 2px;
+}
+
+.svg-icon {
+  fill: rgb(0, 0, 0);
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+  border-radius: 50%;
+}
+
+.circle img {
+  width: 38px;
+  height: 38px;
+}
+
+/* single product css */
+
+body {
+  background-color: #000;
+}
+.card {
+  border: none;
+}
+.product {
+  background-color: #eee;
+}
+.brand {
+  font-size: 13px;
+}
+.act-price {
+  color: red;
+  font-weight: 700;
+}
+.dis-price {
+  text-decoration: line-through;
+}
+.about {
+  font-size: 14px;
+}
+.color {
+  margin-bottom: 10px;
+}
+label.radio {
+  cursor: pointer;
+}
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+label.radio span {
+  padding: 2px 9px;
+  border: 2px solid #ff0000;
+  display: inline-block;
+  color: #ff0000;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+label.radio input:checked + span {
+  border-color: #ff0000;
+  background-color: #ff0000;
+  color: #fff;
+}
+.btn-danger {
+  background-color: #ff0000 !important;
+  border-color: #ff0000 !important;
+}
+.btn-danger:hover {
+  background-color: #da0606 !important;
+  border-color: #da0606 !important;
+}
+.btn-danger:focus {
+  box-shadow: none;
+}
+.cart i {
+  margin-right: 10px;
+}
